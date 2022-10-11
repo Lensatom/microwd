@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import { Auth, Home, Login, Profile } from './pages';
+import { Auth, Home, Login, Pending, Profile } from './pages';
+import Dash from './pages/admin/Dash';
+import Index from './pages/admin/Home';
 
 function App() {
 
@@ -14,6 +16,10 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/auth' element={<Auth />} />
           <Route path='/profile' element={<Profile changeMode={changeMode}/>} />
+          <Route path='/admin' element={<Index />}>
+            <Route path='' element={<Dash />} />
+            <Route path='pending' element={<Pending />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
