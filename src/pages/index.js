@@ -5,3 +5,5 @@ export {default as Profile} from './Profile'
 
 export { default as Index } from './admin/Home'
 export { default as Pending } from './admin/Pending'
+export { default as Streaming } from './admin/Streaming'
+export { default as List } from './admin/List'
