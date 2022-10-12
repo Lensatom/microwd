@@ -10,7 +10,7 @@ const Pending = () => {
 
   return (
     <div className='mt-16 w-full px-3'>
-      <h2 className='font-bold text-gray-900'> Pending Accounts </h2>
+      <h2 className='font-bold text-cyan-800'> Pending Accounts </h2>
       {pendings.map(pending => {
         return (
           <a href={`https://wa.me/${pending[1]}`} className='flex py-5 border-b-1 justify-between'>
