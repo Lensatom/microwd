@@ -31,21 +31,14 @@ const Login = () => {
           <label className='font-semibold'> Password </label>
           <Field name="password" id="password" className='w-full mt-2 mb-5 py-3 rounded-md px-2 bg-gray-100' type='password' placeholder='Password here' />
           <button className='w-full rounded-md font-semibold mt-2 py-3 text-sm bg-cyan-800 text-white'> Login </button>
-          <p className='text-sm text-gray-500 mt-3'> Forgot Password? </p>
+          <div className='flex w-full justify-between items-center mt-5'>
+            <p className='text-sm text-gray-500'> Forgot Password? </p>
+            <p className='text-sm text-gray-500'> Create Account </p>
+          </div>
         </Form>
       </Formik>
       <div className='flex justify-between'>
         <div className='flex flex-col items-center'>
-          <FaPlus />
-          <p className='text-sm mt-2 text-gray-500'> Create Account </p>
-        </div>
-        <div className='flex flex-col items-center'>
-          <FaBook />
-          <p className='text-sm mt-2 text-gray-500'> About Us </p>
-        </div>
-        <div className='flex flex-col items-center'>
-          <FaConnectdevelop />
-          <p className='text-sm mt-2 text-gray-500'> Developer Info </p>
         </div>
       </div>
     </div>

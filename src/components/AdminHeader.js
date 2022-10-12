@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaArrowLeft } from 'react-icons/fa';
+import { FaArrowLeft, FaBars, FaHamburger } from 'react-icons/fa';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 
 const AdminHeader = () => {
@@ -12,8 +12,9 @@ const AdminHeader = () => {
 
   const previous = () => {
     let to = ""
-    if (addys.length == 3) {
-      to = '/admin'
+    
+    if (addys.length <= 3) {
+      to = `/${addys[addys.length - 2]}`
     } else {
       for (let i = 1; i < addys.length - 1; i++) {
         to = `${to}/${addys[i]}`
@@ -25,7 +26,7 @@ const AdminHeader = () => {
 
   return (
     <div className='flex w-full p-3 border-b bg-white fixed top-0 left-0 text-sm font-semibold justify-between items-center'>
-      {addy == 'admin' ? <p> Admin </p> : <FaArrowLeft onClick={() => previous()} />}
+      {addy == 'admin' ? <FaBars /> : <FaArrowLeft onClick={() => previous()} />}
       <p> Microwd </p>
     </div>
   )
