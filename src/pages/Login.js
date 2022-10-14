@@ -11,9 +11,9 @@ const Login = () => {
 
   return (
     <div className='flex flex-col w-full h-screen justify-between pb-5 px-3'>
-      <div className='w-full flex justify-between items-center py-3 border-b'>
-        <p> Logo </p>
-        <p> Microwd </p>
+      <div className='w-full flex justify-between items-center py-3 border-b text-gray-900'>
+        <p> Login </p>
+        <p className='font-semibold'> Microwd </p>
       </div>
       <div className='flex flex-col'>
         <p className="text-3xl mt-1 font-semibold text-cyan-800"> I'M <br /> PRESENT </p>
