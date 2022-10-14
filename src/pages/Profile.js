@@ -35,7 +35,7 @@ const Profile = () => {
     for(let i = 0; i < keys.length; i++) {
       const checker = document.getElementById(`${keys[i]}c`);
       if (variables[keys[i]] !== initialValues[keys[i]]) {
-        checker.className = 'block text-blue-800';
+        checker.className = 'block text-cyan-800';
       } else {
         checker.className = "hidden";
       }
